@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.30523.141
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.32014.148
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Finance.PciDssIntegration.GrpcService", "Finance.PciDssIntegration.GrpcService\Finance.PciDssIntegration.GrpcService.csproj", "{57BA2555-F486-4A0C-A494-E84783722A13}"
 EndProject
@@ -10,6 +10,13 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Finance.PciDssIntegration.GrpcService.Tests", "Finance.PciDssIntegration.GrpcService.Tests\Finance.PciDssIntegration.GrpcService.Tests.csproj", "{5FE27D9C-C52C-482A-ABEA-4DF43FD6402A}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{DA01F926-4DBC-48C8-B595-63574CFD05FA}"
+	ProjectSection(SolutionItems) = preProject
+		.github\workflows\ci-test.yml = .github\workflows\ci-test.yml
+		.github\workflows\release-api-client.yml = .github\workflows\release-api-client.yml
+		.github\workflows\release-service.yml = .github\workflows\release-service.yml
+		.github\workflows\restart-test-env.yml = .github\workflows\restart-test-env.yml
+		.github\workflows\update_nuget.yaml = .github\workflows\update_nuget.yaml
+	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Finance.PciDssIntegration.GrpcService.Postgres", "Finance.PciDssIntegration.GrpcService.Postgres\Finance.PciDssIntegration.GrpcService.Postgres.csproj", "{E88617CE-4FED-458B-84ED-08A08249E6AC}"
 EndProject

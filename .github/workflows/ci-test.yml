@@ -37,28 +37,28 @@ jobs:
     - name: Check Service dir
       run: ls ./publish-api
       
-    - name: Publish image
-      uses: docker/build-push-action@v1
-      with:
-        username: ${{ github.actor }}
-        password: ${{ secrets.GITHUB_TOKEN }}
-        path: ./publish-api
-        registry: docker.pkg.github.com
-        repository: ${{ secrets.ORG_NAME }}/finance.pcidssintegration.grpcservice/myjetwallet.finance.pcidssintegration.grpcservice-test
-        tags: latest
-        build_args: app_version=myjetwallet.finance.pcidssintegration.grpcservice-test:latest,app_compilation_date=${{ steps.current-time.outputs.formattedTime }}
+#    - name: Publish image
+#      uses: docker/build-push-action@v1
+#      with:
+#        username: ${{ github.actor }}
+#        password: ${{ secrets.GITHUB_TOKEN }}
+#        path: ./publish-api
+#        registry: docker.pkg.github.com
+#        repository: ${{ secrets.ORG_NAME }}/finance.pcidssintegration.grpcservice/myjetwallet.finance.pcidssintegration.grpcservice-test
+#        tags: latest
+#        build_args: app_version=myjetwallet.finance.pcidssintegration.grpcservice-test:latest,app_compilation_date=${{ steps.current-time.outputs.formattedTime }}
 
-    - name: Publish image ST
-      uses: docker/build-push-action@v1
-      with:
-        username: ${{ secrets.ST_DOCKER_USER }}
-        password: ${{ secrets.ST_DOCKER_PASSWORD }}
-        path: ./publish-api
-        registry: ${{ secrets.AZURE_CONTAINER_REGISTRY }}
-        repository: spot/myjetwallet.finance.pcidssintegration.grpcservice-test
-        tags: latest
-        add_git_labels: true
-        build_args: app_version=myjetwallet.finance.pcidssintegration.grpcservice-test:latest,app_compilation_date=${{ steps.current-time.outputs.formattedTime }}
+#    - name: Publish image ST
+#      uses: docker/build-push-action@v1
+#      with:
+#        username: ${{ secrets.ST_DOCKER_USER }}
+#        password: ${{ secrets.ST_DOCKER_PASSWORD }}
+#        path: ./publish-api
+#        registry: ${{ secrets.AZURE_CONTAINER_REGISTRY }}
+#        repository: spot/myjetwallet.finance.pcidssintegration.grpcservice-test
+#        tags: latest
+#        add_git_labels: true
+#        build_args: app_version=myjetwallet.finance.pcidssintegration.grpcservice-test:latest,app_compilation_date=${{ steps.current-time.outputs.formattedTime }}
 
 #  restart:
 #    runs-on: ubuntu-latest    
