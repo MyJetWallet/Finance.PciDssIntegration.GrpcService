@@ -1,0 +1,12 @@
+image: mcr.microsoft.com/dotnet/sdk:5.0-alpine
+
+variables:
+  BUILD_FOLDER: Finance.PciDssIntegration.GrpcService
+  DOCKER_IMAGE_TAG: monfex/finance-pci-dss-integration-grpc
+  TEST_FOLDER: Finance.PciDssIntegration.GrpcService.Tests
+  KUBERNETES_APP_SELECTOR_NAME_DEV: simple-trading-pci-dss-integration
+
+include:
+  - project: 'MONFEX-DEVOPS/infrastructure_builder'
+    ref: master
+    file: '/.gitlab-ci.yml'

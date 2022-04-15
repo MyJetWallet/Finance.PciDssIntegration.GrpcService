@@ -1,0 +1,51 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30523.141
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Finance.PciDssIntegration.GrpcService", "Finance.PciDssIntegration.GrpcService\Finance.PciDssIntegration.GrpcService.csproj", "{57BA2555-F486-4A0C-A494-E84783722A13}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Finance.PciDssIntegration.GrpcService.Abstractions", "Finance.PciDssIntegration.GrpcService.Abstractions\Finance.PciDssIntegration.GrpcService.Abstractions.csproj", "{5FCDBFD2-D4A1-4A4C-9D95-E6068ADF64E6}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Finance.PciDssIntegration.GrpcService.Tests", "Finance.PciDssIntegration.GrpcService.Tests\Finance.PciDssIntegration.GrpcService.Tests.csproj", "{5FE27D9C-C52C-482A-ABEA-4DF43FD6402A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{DA01F926-4DBC-48C8-B595-63574CFD05FA}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Finance.PciDssIntegration.GrpcService.Postgres", "Finance.PciDssIntegration.GrpcService.Postgres\Finance.PciDssIntegration.GrpcService.Postgres.csproj", "{E88617CE-4FED-458B-84ED-08A08249E6AC}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Finance.PciDssIntegration.GrpcService.Domain", "Finance.PciDssIntegration.GrpcService.Domain\Finance.PciDssIntegration.GrpcService.Domain.csproj", "{24A01536-CED6-4BFC-91D2-1DFA2BC1480F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{57BA2555-F486-4A0C-A494-E84783722A13}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{57BA2555-F486-4A0C-A494-E84783722A13}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{57BA2555-F486-4A0C-A494-E84783722A13}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{57BA2555-F486-4A0C-A494-E84783722A13}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5FCDBFD2-D4A1-4A4C-9D95-E6068ADF64E6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5FCDBFD2-D4A1-4A4C-9D95-E6068ADF64E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5FCDBFD2-D4A1-4A4C-9D95-E6068ADF64E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5FCDBFD2-D4A1-4A4C-9D95-E6068ADF64E6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5FE27D9C-C52C-482A-ABEA-4DF43FD6402A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5FE27D9C-C52C-482A-ABEA-4DF43FD6402A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5FE27D9C-C52C-482A-ABEA-4DF43FD6402A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5FE27D9C-C52C-482A-ABEA-4DF43FD6402A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E88617CE-4FED-458B-84ED-08A08249E6AC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E88617CE-4FED-458B-84ED-08A08249E6AC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E88617CE-4FED-458B-84ED-08A08249E6AC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E88617CE-4FED-458B-84ED-08A08249E6AC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{24A01536-CED6-4BFC-91D2-1DFA2BC1480F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{24A01536-CED6-4BFC-91D2-1DFA2BC1480F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{24A01536-CED6-4BFC-91D2-1DFA2BC1480F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{24A01536-CED6-4BFC-91D2-1DFA2BC1480F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A4A4D6C9-11B9-4BC5-BA1A-132292D0DE3C}
+	EndGlobalSection
+EndGlobal

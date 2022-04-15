@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+    <ItemGroup>
+        <PackageReference Include="Finance.CardValidator" Version="1.0.0" />
+        <PackageReference Include="Finance.PciDss.PciDssBridgeGrpc" Version="1.0.20" />
+        <PackageReference Include="Finance.PciDssIntegration.GrpcContracts" Version="1.0.22" />
+        <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+    </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Finance.PciDssIntegration.GrpcService.Abstractions\Finance.PciDssIntegration.GrpcService.Abstractions.csproj" />
+  </ItemGroup>
+
+</Project>
