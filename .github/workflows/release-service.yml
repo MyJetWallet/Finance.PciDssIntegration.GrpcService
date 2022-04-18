@@ -66,40 +66,40 @@ jobs:
         tags: ${{ steps.branches.outputs.value }}
         build_args: app_version=${{ steps.string.outputs.lowercase }}:${{ steps.branches.outputs.value }},app_compilation_date=${{ steps.current-time.outputs.formattedTime }}
 
-  update_version_master:
-    needs: build
-    runs-on: ubuntu-latest
-    steps:
+#   update_version_master:
+#     needs: build
+#     runs-on: ubuntu-latest
+#     steps:
 
-    - uses: actions/checkout@v2
-    - name: Extract branch name
-      uses: vazco/github-actions-branch-name@v1
-      id: branch
+#     - uses: actions/checkout@v2
+#     - name: Extract branch name
+#       uses: vazco/github-actions-branch-name@v1
+#       id: branch
 
-    - id: string
-      uses: ASzc/change-string-case-action@v1
-      with:
-        string: ${{ github.event.repository.name }}
+#     - id: string
+#       uses: ASzc/change-string-case-action@v1
+#       with:
+#         string: ${{ github.event.repository.name }}
 
-    - name: Name of branch
-      id: branches
-      uses: ashley-taylor/regex-property-action@1.2
-      with:
-        value: ${{ github.ref }}
-        regex: ".*/"
-        flags: "" # Optional, defaults to "g"
-        replacement: ""
+#     - name: Name of branch
+#       id: branches
+#       uses: ashley-taylor/regex-property-action@1.2
+#       with:
+#         value: ${{ github.ref }}
+#         regex: ".*/"
+#         flags: "" # Optional, defaults to "g"
+#         replacement: ""
 
-    - name: get master kube yamls
-      uses: actions/checkout@v2
-      with:
-        repository: MyJetEducation/kubernetes-infrastructure
-        ref: uat
-        token: ${{ secrets.UAT_GIT_TOKEN }}
-    - run: ls
-    - run: sed -i s/${{ steps.string.outputs.lowercase }}:.*/${{ steps.string.outputs.lowercase }}:${{ steps.branches.outputs.value }}/g services/*/deployment*
-    - run: |
-        git config user.name github-actions
-        git config user.email github-actions@github.com
-        git commit -a -m "Update version of service ${{ steps.string.outputs.lowercase }}"
-        git push
+#     - name: get master kube yamls
+#       uses: actions/checkout@v2
+#       with:
+#         repository: MyJetEducation/kubernetes-infrastructure
+#         ref: uat
+#         token: ${{ secrets.UAT_GIT_TOKEN }}
+#     - run: ls
+#     - run: sed -i s/${{ steps.string.outputs.lowercase }}:.*/${{ steps.string.outputs.lowercase }}:${{ steps.branches.outputs.value }}/g services/*/deployment*
+#     - run: |
+#         git config user.name github-actions
+#         git config user.email github-actions@github.com
+#         git commit -a -m "Update version of service ${{ steps.string.outputs.lowercase }}"
+#         git push
