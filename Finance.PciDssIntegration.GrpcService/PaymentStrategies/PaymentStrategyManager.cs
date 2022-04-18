@@ -3,9 +3,10 @@ using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using DotNetCoreDecorators;
 using Finance.PciDssIntegration.GrpcContracts.Contracts;
-using SimpleTrading.Abstraction.Payments;
+using SimpleTrading.Payments.Abstractions;
 using SimpleTrading.Deposit.Postgresql.Models;
 using SimpleTrading.Deposit.Postgresql.Repositories;
+using SimpleTrading.Payments.ServiceBus.Models;
 using SimpleTrading.ServiceBus.Contracts;
 
 namespace Finance.PciDssIntegration.GrpcService.PaymentStrategies

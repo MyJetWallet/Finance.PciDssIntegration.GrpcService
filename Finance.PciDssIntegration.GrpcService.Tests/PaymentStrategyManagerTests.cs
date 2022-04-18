@@ -15,7 +15,8 @@ namespace Finance.PciDssIntegration.GrpcService.Tests
         public PaymentStrategyManagerTests()
         {
             _serviceResolver = Substitute.For<IServiceResolver>();
-            _serviceResolver.GetService<DepositRepository>().Returns(new DepositRepository(string.Empty, string.Empty));
+            _serviceResolver.GetService<DepositRepository>()
+                .Returns(new DepositRepository(string.Empty, string.Empty, string.Empty));
             ServiceLocator.Init(_serviceResolver);
         }
 

@@ -7,6 +7,7 @@ using MyDependencies;
 using Serilog;
 using SimpleTrading.Auth.Grpc;
 using SimpleTrading.Deposit.Postgresql.Repositories;
+using SimpleTrading.Payments.ServiceBus.Models;
 using SimpleTrading.ServiceBus.Contracts;
 
 namespace Finance.PciDssIntegration.GrpcService

@@ -13,8 +13,8 @@ using Serilog;
 using SimpleTrading.Auth.Grpc;
 using SimpleTrading.Deposit.Postgresql.Repositories;
 using SimpleTrading.MyLogger;
-using SimpleTrading.ServiceBus.Contracts;
-using SimpleTrading.ServiceBus.PublisherSubscriber.Deposit;
+using SimpleTrading.Payments.ServiceBus.Deposit;
+using SimpleTrading.Payments.ServiceBus.Models;
 using SimpleTrading.SettingsReader;
 
 namespace Finance.PciDssIntegration.GrpcService
@@ -26,7 +26,7 @@ namespace Finance.PciDssIntegration.GrpcService
         private static SettingsModel SettingModel => SettingsReader.ReadSettings<SettingsModel>();
         public static void BindDbRepositories(this IServiceRegistrator sr)
         {
-            sr.Register(new DepositRepository(SettingModel.DatabaseConnString, AppName));
+            sr.Register(new DepositRepository(SettingModel.DatabaseConnString, SettingModel.DatabaseConnString, AppName));
             sr.Register<IProviderStrategySettingsRepository>(
                 new ProviderStrategySettingsRepository(new PostgresConnection(SettingModel.DatabaseConnString, AppName)));
         }

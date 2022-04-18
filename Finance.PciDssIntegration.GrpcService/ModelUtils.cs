@@ -6,8 +6,9 @@ using Finance.PciDss.PciDssBridgeGrpc.Contracts.Enums;
 using Finance.PciDss.PciDssBridgeGrpc.Models;
 using Finance.PciDssIntegration.GrpcContracts.Contracts;
 using Finance.PciDssIntegration.GrpcService.Abstractions;
-using SimpleTrading.Abstraction.Payments;
+using SimpleTrading.Payments.Abstractions;
 using SimpleTrading.Deposit.Postgresql.Models;
+using SimpleTrading.Payments.ServiceBus.Models;
 using SimpleTrading.ServiceBus.Contracts;
 using BrandName = Finance.PciDssIntegration.GrpcContracts.Contracts.BrandName;
 
