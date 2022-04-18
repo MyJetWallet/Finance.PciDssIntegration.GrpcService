@@ -61,7 +61,7 @@ jobs:
       with:
         username: ${{ secrets.ST_DOCKER_USER }}
         password: ${{ secrets.ST_DOCKER_PASSWORD }}
-        path: ./publish-api
+        path: ./${{ github.event.repository.name }}
         registry: ${{ secrets.AZURE_CONTAINER_REGISTRY }}
         repository: myjeteducation/${{ steps.string.outputs.lowercase }}
         tags: ${{ steps.branches.outputs.value }}
