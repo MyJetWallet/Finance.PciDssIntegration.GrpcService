@@ -27,7 +27,7 @@
         <PackageReference Include="SimpleTrading.ServiceStatusReporterConnector" Version="1.0.9" />
         <PackageReference Include="protobuf-net.Grpc" Version="1.0.152" />
         <PackageReference Include="protobuf-net.Grpc.AspNetCore" Version="1.0.152" />
-        <PackageReference Include="Grpc.Net.Client" Version="2.44.0" />
+        <PackageReference Include="Grpc.Net.Client" Version="2.45.0" />
         <PackageReference Include="SimpleTrading.GrpcTemplate" Version="1.0.4" />
         <PackageReference Include="Finance.PciDss.PciDssBridgeGrpc" Version="1.0.21" />
         <PackageReference Include="System.Collections.Concurrent" Version="4.3.0" />
