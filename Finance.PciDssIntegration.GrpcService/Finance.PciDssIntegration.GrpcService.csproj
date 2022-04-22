@@ -17,7 +17,7 @@
         <PackageReference Include="SimpleTrading.BaseMetrics" Version="1.0.3" />
         <PackageReference Include="SimpleTrading.Common" Version="1.0.32" />
         <PackageReference Include="SimpleTrading.Deposit.Postgresql" Version="1.0.15" />
-        <PackageReference Include="SimpleTrading.MyLogger" Version="1.0.10" />
+        <PackageReference Include="SimpleTrading.MyLogger" Version="2.0.0" />
         <PackageReference Include="SimpleTrading.Payments.Abstractions" Version="1.0.2" />
         <PackageReference Include="SimpleTrading.Payments.ServiceBus" Version="1.0.2" />
         <PackageReference Include="SimpleTrading.ServiceBus" Version="4.0.17" />
